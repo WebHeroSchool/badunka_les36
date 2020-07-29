@@ -8,7 +8,7 @@ window.setTimeout(function () {
     setTimeout(() => date ? resolve(date) : reject("Ошибка"), 100)
   })
   const getUrl = new Promise((resolve, reject) => {
-    setTimeout(() => url ? resolve(url) : reject("Ошибка!"), 100)
+    setTimeout(() => url ? resolve(url) : reject("Ошибка URL!"), 100)
   })
 
    Promise.all([getUrl, getDate])
